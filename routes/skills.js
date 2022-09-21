@@ -6,8 +6,14 @@ import * as skillsCtrl from '../controllers/skills.js'
 
 const router = Router()
 
-/* GET skills listing. */
+/* GET METHODS ARE THE BASE!
+/* GET skills listing (anything under here is GET methods). */
 router.get('/', skillsCtrl.index)
+router.get('/new', skillsCtrl.new)
+
+/* POST METHODS */
+
+router.post('/', skillsCtrl.create)
 
 
 export {
