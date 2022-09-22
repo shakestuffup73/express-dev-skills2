@@ -13,7 +13,7 @@ function newSkill (req, res) {
 
 function create (req, res) {
   console.log(req.body)
-  Skill.create(req.body)
+  Skill.create(req.body) // req.body is looking inside new.ejs
   .then(skill => {
     res.redirect('/skills')
   })
@@ -29,5 +29,3 @@ export {
   newSkill as new,
   create,
 }
-
-<a href="/category/socks/page/2">Next Page</a>
