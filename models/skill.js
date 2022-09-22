@@ -8,7 +8,7 @@ const skillSchema = new Schema({
   done: Boolean,
 })
 
-const Skill = mongoose.model('Skill', todoSchema)
+const Skill = mongoose.model('Skill', skillSchema)
 
 export {
   Skill
