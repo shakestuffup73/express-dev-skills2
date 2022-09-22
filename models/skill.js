@@ -12,4 +12,4 @@ const Skill = mongoose.model('Skill', skillSchema)
 
 export {
   Skill
-}
+}d

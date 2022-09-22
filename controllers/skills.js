@@ -9,7 +9,7 @@ import { router } from '../routes/skills.js'
 // now refactor the index controller function!
 function index(req, res) {
   Skill.find({})
-    .then(skills => { // todos represents the result of the query, in this case ALL todos
+    .then(skills => { // skills represents the result of the query, in this case ALL skills
       res.render('skills/index', {
         skills: skills,
       })
